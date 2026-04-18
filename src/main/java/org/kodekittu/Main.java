@@ -13,6 +13,17 @@ import org.kodekittu.utils.FixedDateProvider;
 
 import java.time.LocalDate;
 
+
+/**
+ * Entry point for demonstrating the SIP system workflow.
+ * This class simulates user interactions such as creating, pausing, unpausing,
+ * and stopping SIPs, along with viewing the portfolio state.
+ * It also triggers SIP execution using the ExecutionEngine based on a given date.
+ * All data is maintained in-memory and external dependencies like pricing and
+ * payment are mocked for simplicity.
+ * The flow is deterministic and designed to showcase core business logic clearly.
+ */
+
 public class Main {
 
     public static void main(String[] args) {
