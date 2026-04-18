@@ -37,7 +37,11 @@ public class SIPService {
         repo.get(sipId).pause();
     }
 
-    public void unpause(String sipId) {
-        repo.get(sipId).unpause();
+    public void resume(String sipId) {
+        repo.get(sipId).resume();
+    }
+
+    public void stop(String sipId) {
+        repo.get(sipId).stop();
     }
 }

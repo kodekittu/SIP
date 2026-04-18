@@ -32,7 +32,7 @@ class SIPServiceTest {
     }
 
     @Test
-    void shouldPauseAndUnpauseSIP() {
+    void shouldPauseAndResumeSIP() {
         SIPRepository repo = new SIPRepository();
         SIPService service = new SIPService(repo);
 
@@ -44,7 +44,7 @@ class SIPServiceTest {
         service.pause(sip.getSipId());
         assertFalse(sip.isActive());
 
-        service.unpause(sip.getSipId());
+        service.resume(sip.getSipId());
         assertTrue(sip.isActive());
     }
 

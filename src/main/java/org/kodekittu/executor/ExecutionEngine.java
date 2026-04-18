@@ -78,7 +78,7 @@ public class ExecutionEngine {
      * Executes SIP installment
      */
     private void execute(SIP sip) {
-        double nav = pricingService.getLatestNAV(sip.getFund().getId());
+        double nav = pricingService.getLatestNAV(sip.getFund().id());
         double amount = sip.getAmount();
         double units = amount / nav;
 

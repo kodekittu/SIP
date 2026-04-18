@@ -35,7 +35,8 @@ public class SIP {
     }
 
     public void pause() { this.status = SIPStatus.PAUSED; }
-    public void unpause() { this.status = SIPStatus.ACTIVE; }
+    public void resume() { this.status = SIPStatus.ACTIVE; }
+    public  void stop() { this.status = SIPStatus.STOPPED; }
 
     public void applyStepUp() {
         if (stepUpPercent > 0) {
